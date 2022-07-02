@@ -1,0 +1,402 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Item;
+use Carbon\Carbon;
+use Illuminate\Database\Seeder;
+
+class ItemSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $date = Carbon::now();
+        $dummyItems = [
+            [
+                "code" => 1001,
+                "name" => "Aki Vario 125 Gs Astra / Gtz6v",
+                "price" => 284000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 2001,
+                "name" => "Ban Luar 80/90-14",
+                "price" => 201500,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 3001,
+                "name" => "Busi Honda Vario",
+                "price" => 13200,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 3002,
+                "name" => "Busi Honda Supra X 125",
+                "price" => 13200,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 4001,
+                "name" => "Bohlam depan Honda Vario",
+                "price" => 25000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 4002,
+                "name" => "Bohlam depan Honda BeAT",
+                "price" => 25000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 4003,
+                "name" => "Bohlam depan Honda Supra X 125",
+                "price" => 25000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 4004,
+                "name" => "Bohlam Belakang Honda Supra X 125",
+                "price" => 13500,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 5001,
+                "name" => "Lampu belakang set Honda Vario",
+                "price" => 198000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 5002,
+                "name" => "lampu depan set Honda Vario",
+                "price" => 302000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 6001,
+                "name" => "Lampu Sen Depan kiri Honda Vario",
+                "price" => 51000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 6002,
+                "name" => "Lampu Sen Depan kanan Honda Vario",
+                "price" => 51000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 7001,
+                "name" => "Kampas Ganda Honda Vario",
+                "price" => 132000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 7002,
+                "name" => "Kampas Rem Belakang Honda Vario",
+                "price" => 49000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 7003,
+                "name" => "Kampas Rem Depan Honda BeAT",
+                "price" => 53000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 7004,
+                "name" => "Kampas Rem Belakang Honda BeAT",
+                "price" => 49000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 7005,
+                "name" => "Kampas Rem  Belakang Honda Supra X 125",
+                "price" => 35000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 7006,
+                "name" => "Kampas Rem  depan Honda Supra X 125",
+                "price" => 48000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 7007,
+                "name" => "Kampas Kopling  set Honda Supra X 125",
+                "price" => 480000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 8001,
+                "name" => "Kabel Spidometer Honda BeAT",
+                "price" => 32500,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 9001,
+                "name" => "Relay Starter Honda BeAT",
+                "price" => 221000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 10001,
+                "name" => "Saringan Udara Honda BeAT",
+                "price" => 51000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 11001,
+                "name" => "Rumah Roller Honda BeAT",
+                "price" => 65000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 12001,
+                "name" => "V-belt",
+                "price" => 133000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 13001,
+                "name" => "Sokbreker Belakang",
+                "price" => 212000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 14001,
+                "name" => "Kampas Kopling Set Honda BeAT",
+                "price" => 118000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 15001,
+                "name" => "Gir Depan Honda Supra X 125",
+                "price" => 35500,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 15002,
+                "name" => "Gir Belakang Honda Supra X 125",
+                "price" => 132000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 16001,
+                "name" => "Ring  Piston Honda Supra X 125",
+                "price" => 85000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 17001,
+                "name" => "Rantai Honda Supra X 125",
+                "price" => 13200,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 18001,
+                "name" => "Gear Set Honda Supra X 125",
+                "price" => 167000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19001,
+                "name" => "AHM Oil MPX-3",
+                "price" => 39000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19002,
+                "name" => "AHM Oil SPX-1",
+                "price" => 59000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19003,
+                "name" => "AHM Oil MPX-1",
+                "price" => 62000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19004,
+                "name" => "Federal Matic",
+                "price" => 35000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19005,
+                "name" => "Ultratec Matic",
+                "price" => 35000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19006,
+                "name" => "Federal Ultratec",
+                "price" => 45000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19007,
+                "name" => "Federal Y-Matic",
+                "price" => 50000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19008,
+                "name" => "MOTUL 3000 PLUS 10W-40",
+                "price" => 70000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19009,
+                "name" => "MOTUL 3000 PLUS 15W-50",
+                "price" => 72000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19010,
+                "name" => "MOTUL 3000 PLUS 20W-50",
+                "price" => 70000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19011,
+                "name" => "MOTUL 3100 GOLD 15W-50",
+                "price" => 90000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19012,
+                "name" => "MOTUL 3100 GOLD 10W-40",
+                "price" => 95000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19013,
+                "name" => "Advance AX5 Scooter 20W-40",
+                "price" => 37000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19014,
+                "name" => "Advance AX5 Scooter 10W-30",
+                "price" => 36000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19015,
+                "name" => "Advance AX7 Scooter 10W-30",
+                "price" => 60000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19016,
+                "name" => "Suzuki Genuine Oil 20W- 50",
+                "price" => 38000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19017,
+                "name" => "Suzuki Genuine Oil 10W-40",
+                "price" => 45000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 19018,
+                "name" => "Yamalube Silver Oil",
+                "price" => 38000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 20001,
+                "name" => "Yamaha Genuine Parts 93306004XV Bearing (3C11/2 Pcs)",
+                "price" => 33000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 20002,
+                "name" => "INDOPARTS 6001ZZ Bearing",
+                "price" => 10000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 20003,
+                "name" => "SKF Genio 6201-2Z/VC525 Bearing Laher Laker Motor",
+                "price" => 28000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 20004,
+                "name" => "BEARING / LAHER RODA DEPAN MB 633086",
+                "price" => 66000,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ],
+            [
+                "code" => 20005,
+                "name" => "Npp 6301 Bearing Laher Motor",
+                "price" => 18810,
+                "created_at" => $date,
+                "updated_at" => $date,
+            ]
+        ];
+
+        Item::insert($dummyItems);
+    }
+}

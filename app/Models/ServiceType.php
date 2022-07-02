@@ -9,10 +9,15 @@ class ServiceType extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'price'];
+    protected $fillable = ['approved_service_id', 'service_id'];
 
     public function approvedService()
     {
         return $this->belongsTo(ApprovedService::class);
+    }
+
+    public function service()
+    {
+        return $this->belongsTo(Service::class);
     }
 }
