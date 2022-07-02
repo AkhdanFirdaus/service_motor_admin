@@ -9,16 +9,18 @@ class Technician extends Model
 {
     use HasFactory;
 
-    protected $table = 'data_teknisi';
-    protected $primaryKey = 'ID_TEKNISI';
-    protected $fillable = [
-        'ID_TEKNISI',
-        'ID_PELANGGAN',
-        'PASSWORD',
-        'NAMA_TEKNISI',
-        'ALAMAT_TEKNISI',
-        'NO_IDENTITAS_TEKNISI',
-        'TGL_MASAK'
-    ];
-    protected $timestamps = false;
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function role()
+    {
+        return $this->belongsTo(Role::class);
+    }
+
+    public function approvedServices()
+    {
+        return $this->hasMany(ApprovedService::class);
+    }
 }

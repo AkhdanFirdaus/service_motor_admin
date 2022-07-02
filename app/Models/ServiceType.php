@@ -5,12 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Role extends Model
+class ServiceType extends Model
 {
     use HasFactory;
-
-    public function technicians()
-    {
-        return $this->hasMany(Technician::class);
-    }
 }

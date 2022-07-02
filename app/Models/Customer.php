@@ -9,8 +9,18 @@ class Customer extends Model
 {
     use HasFactory;
 
-    protected $table = 'data_pelanggan';
-    protected $primaryKey = 'ID_PELANGGAN';
-    protected $fillable = ['ID_PELANGGAN', 'NAMA', 'ALAMAT', 'NO_HP', 'NO_STNK'];
-    protected $timestamps = false;
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function diagnoses()
+    {
+        return $this->hasMany(Diagnose::class);
+    }
+
+    public function approvedServices()
+    {
+        return $this->hasMany(ApprovedService::class);
+    }
 }

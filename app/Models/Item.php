@@ -9,8 +9,8 @@ class Item extends Model
 {
     use HasFactory;
 
-    protected $table = 'data_barang';
-    protected $primaryKey = 'ID_BARANG';
-    protected $fillable = ['ID_BARANG', 'NAMA_BARANG', 'HARGA_BARANG'];
-    protected $timestamps = false;
+    public function serviceItem()
+    {
+        return $this->belongsTo(ServiceItem::class);
+    }
 }
