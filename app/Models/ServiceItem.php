@@ -9,6 +9,14 @@ class ServiceItem extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'item_id',
+        'approved_service_id',
+        'qty',
+        'price',
+        'total',
+    ];
+
     public function approvedService()
     {
         return $this->belongsTo(ApprovedService::class);

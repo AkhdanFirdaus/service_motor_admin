@@ -9,6 +9,13 @@ class Technician extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'user_id',
+        'role_id',
+        'address',
+        'join_date',
+    ];
+
     public function user()
     {
         return $this->belongsTo(User::class);

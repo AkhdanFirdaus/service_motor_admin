@@ -9,6 +9,8 @@ class Item extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name', 'price'];
+
     public function serviceItem()
     {
         return $this->belongsTo(ServiceItem::class);

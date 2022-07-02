@@ -9,6 +9,12 @@ class ApprovedService extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'technician_id',
+        'customer_id',
+        'summary_problem',
+    ];
+
     public function technician()
     {
         return $this->belongsTo(Technician::class);

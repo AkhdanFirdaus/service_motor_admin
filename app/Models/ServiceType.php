@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class ServiceType extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['name', 'price'];
+
+    public function approvedService()
+    {
+        return $this->belongsTo(ApprovedService::class);
+    }
 }

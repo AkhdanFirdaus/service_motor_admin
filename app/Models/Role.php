@@ -9,6 +9,8 @@ class Role extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name', 'level'];
+
     public function technicians()
     {
         return $this->hasMany(Technician::class);
